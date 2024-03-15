@@ -8,4 +8,6 @@ import org.springframework.stereotype.Repository;
 public interface ComitenteRepository extends JpaRepository<Comitente, Long> {
     // Método personalizado para buscar comitentes por descripción
     Comitente findByDescripcion(String descripcion);
+
+
 }

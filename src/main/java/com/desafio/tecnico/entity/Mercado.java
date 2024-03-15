@@ -14,7 +14,7 @@ public class Mercado {
     private String codigo;
     private String descripcion;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "pais_id")
     private Pais pais;
 

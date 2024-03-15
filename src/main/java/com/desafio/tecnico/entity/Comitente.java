@@ -13,7 +13,7 @@ public class Comitente {
     private Long id;
     private String descripcion;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "comitente_mercado",
             joinColumns = @JoinColumn(name = "comitente_id"),
